@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital@1&family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Staatliches&display=swap');
 
 
 *{
@@ -15,8 +15,8 @@ body{
 body::before{
     content: '';
     width: 100%;
-    background: #535971;
-    height: 436px;
+    background: #293241;
+    height: 465px;
     position: absolute;
     top: 0;
     left: 0;
@@ -24,142 +24,227 @@ body::before{
 }
 
 .hd-content{
-    width: 750px;
-    margin: auto;
+    max-width: 750px;
+    margin: 0 auto 100px;
+    position: relative;
+    
 }
 
 header{
-    max-width: 350px;
-    margin-top: 140px;
+    max-width: 391px;
+    margin: 107px auto 0;
+    
 }
 
 header h1{
-    font-family: 'Staatliches', sans-serif;
-    font-size: 48px;
-    line-height: 60px;
+    font: 36px'Staatliches', sans-serif;
+    line-height: 45px;
     color: #fff;
-    margin-bottom: 18px;
+    text-align: center;
 }
 
 header p{
-    font-size: 20px;
-    line-height: 30px;
-    color: #42D3FF;
-    margin-bottom: 58px;
-   
+    font: 16px 'Poppins' sans-serif;
+    line-height: 24px;
+    color: #FFFFFF;
+    margin-bottom: 27px;
+}
+
+header > img{
+    display: block;
+    margin: auto;
+    width: 225px;
+    margin-bottom: 32px;
 }
 
 form{
-    max-width: 750px;
-    margin: auto;
-    border-radius: 8px 8px 0px 0px;
-    background: #FAFAFC;
-    min-height: 300px;
-    padding: 64px;
+    background: #fff;
+    padding-bottom: 64px;
+    border-radius: 20px;
+    
 }
 
 
-fieldset{
-    border: none;
-}
-
-fieldset legend{
-    font: 600 24px 'Archivo', sans-serif;
+fieldset .main-field{
+    font: 24px'Staatliches', sans-serif;
     line-height: 34px;
-    border-bottom: 1px solid #E6E6F0;
-    width: 100%;
-    padding-bottom: 16px;
-    color: #32264D; 
-}
-
-.input-wrap{
+    color: #fff;
+    text-align: center;
+    height: 130px;
+    background: #F67669;
     display: flex;
-    flex-direction: column;
-    gap: 8px;
-    margin-top: 24px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px 20px 0 0;
+   
+    
 }
 
-.label.wrap{
-    display: block;
-    flex-direction: column;
+form fieldset{
+    border: none;
+   
 }
 
-.input-wrap label{
-    font-size: 14px;
-    line-height: 24px;
-    color: #4E4958;
-    margin-right: 12px;
-}
-
-span{
+form span{
     font-size: 12px;
     line-height: 20px;
-    color: #C1BCCC
+    color: #C1BCCC;
+    margin-left: 9px;
 }
 
-.input-wrap input{
+form fieldset label{
+    font-size: 14px;
+    line-height: 24px;
+    color:  #4E4958;
+}
+
+form fieldset input{
+    padding: 0 10px;
     border: 1px solid #E6E6F0;
     border-radius: 8px;
-    height: 56px;
-    padding: 0 24px;
-    font-size: 16px;
-    line-height: 26px;
-    color: #C1BCCC;
-    margin-bottom: 24px;
+    height: 55px;
 }
 
-.input-wrap p{
-    font-size: 20px;
-    line-height: 34px;
-    color: #535971;
-    font-weight: bold;
-}
-
-.date-teste{
+form fieldset .main-field-content{
+    margin: 31px 64px;
     display: flex;
-    width: 100%;
-    gap: 22px;
+    flex-direction: column;
+    gap: 16px;
 }
 
-.date-teste > div:first-child{
-    width: 50%;
-}
-.date-teste > div:nth-child(2){
-    width: 50%;
+.wrapper-names{
+    display: flex;
+    flex-direction: row;
+    gap: 22px;   
 }
 
-.date-wrapper-flex{
+form .names{
     display: flex;
     flex-direction: column;
     gap: 8px;
+    width: 100%;
 }
 
-.sbt-button{
-    margin: 0 auto 100px;;
-    max-width: 750px;
-    background: #535971;
-    height: 160px;
+fieldset .sec-content{
+    font: 24px'Staatliches', sans-serif;
+    line-height: 34px;
+    color: #253B51;
+    text-align: center;
+    border-bottom: 1px solid #E6E6F0;
+    margin: 0 64px;
+    padding-bottom: 7px;
+}
+
+.main-field-content select{
+    padding: 0 10px;
+    height: 55px;
+    border: 1px solid #E6E6F0;
+    border-radius: 8px;
+    background: #FFFFFF;
+    font-size: 14px;
+    line-height: 24px;
+    color:  #4E4958;
+    margin-bottom: 15px;
+    width: 50%;
+}
+
+.main-field-content textarea{
+    padding: 0 10px;
+    border: 1px solid #E6E6F0;
+    border-radius: 8px;
+    font-size: 14px;
+    line-height: 24px;
+    color:  #000000;
+    height: 167px;
+    resize: none;
+}
+
+fieldset .c-box{
+    position: relative;
     display: flex;
-    justify-content: center;
     align-items: center;
-    border-radius: 0px 0px 8px 8px;
-    border-top: 1px solid #E6E6F0;  
+    gap: 8px;
+    margin-top: 15px;
+    
 }
 
-.sbt-button button{
-    background: #FF5374;
-    color: #fff;
-    border-radius: 55px;
-    font-weight: 600;
-    height: 56px;
-    border: none;
-    cursor: pointer;
-    width: 82.61%;
-    font-size: 20px;
+fieldset .c-box input{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 24px;
+    height: 24px;
+    opacity: 0;
+    
+}
+.c-box label{
+    display: flex;
+    gap: 8px;
+}
+
+
+.c-box label::before{
+    content: '';
+    height: 24px;
+    width: 24px;
+    border: 1px solid #E6E6F0;
+    border-radius: 8px;
+    display: inline-block;
+}
+
+.c-box input:checked + label::before{
+    background: url("data:image/svg+xml,%3Csvg width='18' height='14' viewBox='0 0 18 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6 11.17L1.83 7L0.410004 8.41L6 14L18 2L16.59 0.589996L6 11.17Z' fill='%2342D3FF'/%3E%3C/svg%3E%0A");
+   background-repeat: no-repeat;
+   background-position: center;
+}
+
+.c-box input:focus + label::before{
+   outline: 1px solid black;
+}
+
+.field-wrap{
+    padding: 31px 64px;
+}
+
+.data-time{
+    display: flex;
+    width: 100%;
+    gap: 32px;
+}
+
+.data-wrap{
+    width: 50%;
+}
+
+.hours{
+    display: flex;
+    width: 50%;
+    gap: 10px;
+}
+
+.btn-submit{
+    padding: 31px 64px;
+}
+
+.btn-submit button{
+    width: 100%;
+    font: 20px 'Staatliches', sans-serif;
     line-height: 26px;
+    color: #FFF;
+    height: 51px;
+    background: #F67669;
+    border-radius: 8px;
+    border: 1px solid #E6E6F0;
+    cursor: pointer;
 }
 
-.sbt-button button:hover{
-    background: #b82644;
-    transition-duration: .4s;
+.btn-submit button:hover{
+    background: #d85142;
+    transition-duration: .5s;
 }
+
+
+
+
+
+

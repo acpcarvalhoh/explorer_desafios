@@ -20,12 +20,12 @@
         <fieldset>
             <legend>Informações pessoais</legend>
             <div class="input-wrap">
-                <div class="date-teste">
-                    <div class="date-wrapper-flex inp">
+                <div class="name-surname">
+                    <div class="names">
                         <label for="main-name">Nome</label>
                         <input type="text" id="main-name">
                     </div>   
-                    <div class="date-wrapper-flex inp">
+                    <div class="names">
                         <label for="sur-name">Sobrenome</label>
                         <input type="text" id="sur-name">
                     </div>
@@ -56,48 +56,49 @@
         <fieldset>
             <legend>Seus horários disponíveis</legend>
             <div class="input-wrap">
-                <legend id="sec-legend">Primeira mentoria</legend>
-                <div class="data-hours">
-                    <div class="data">
-                        <div class="date-wrapper-flex">
-                            <label for="date">Data
+                <h3>Primeira mentoria</h3>
+                    <div class="data-time">
+                        <div class="data-wrap">
+                            <div class="names">
+                                <label for="date">Data
+                                    <span>(DD/MM/AAAA)</span>
+                                </label>
+                                <input type="date" id="date">
+                            </div>
+                        </div>
+                        <div class="hours">
+                            <div class="names">
+                                <label for="first-hour">Das</label>
+                                <input type="time" id="first-hour">
+                            </div>
+                            <div class="names">
+                                <label for="final-hour">Até</label>
+                                <input type="time" id="final-hour">
+                            </div>
+                        </div>
+                    </div>
+                <h3>Segunda mentoria</h3>
+                <div class="data-time">
+                    <div class="data-wrap">
+                        <div class="names">
+                            <label for="sec-date">Data
                                 <span>(DD/MM/AAAA)</span>
                             </label>
-                            <input type="date" id="date">
+                            <input type="date" id="sec-date">
                         </div>
                     </div>
                     <div class="hours">
-                        <div class="date-wrapper-flex">
-                            <label for="final-hour">Das</label>
-                            <input type="time" id="final-hour" value="19:00">
+                        <div class="names">
+                            <label for="s-first-hour">Das</label>
+                            <input type="time" id="s-first-hour">
                         </div>
-                        <div class="date-wrapper-flex">
-                            <label for="hour">Até</label>
-                            <input type="time" id="hour" value="20:00">
-                        </div>
-                    </div>
-                </div>
-                <legend id="sec-legend">Primeira mentoria</legend>
-                <div class="data-hours">
-                    <div class="data">
-                        <div class="date-wrapper-flex">
-                            <label for="second-date">Data
-                                <span>(DD/MM/AAAA)</span>
-                            </label>
-                            <input type="date" id="second-date">
-                        </div>
-                    </div>
-                    <div class="hours">
-                        <div class="date-wrapper-flex">
-                            <label for="sec-final-hour">Das</label>
-                            <input type="time" id="sec-final-hour" value="19:00">
-                        </div>
-                        <div class="date-wrapper-flex">
-                            <label for="sec-hour">Até</label>
-                            <input type="time" id="sec-hour" value="20:00">
+                        <div class="names">
+                            <label for="s-final-hour">Até</label>
+                            <input type="time" id="s-final-hour">
                         </div>
                     </div>
                 </div>
+            </div>
         </fieldset>
     </form>
     <div class="sbt-button">
