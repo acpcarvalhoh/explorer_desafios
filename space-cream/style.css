@@ -78,18 +78,18 @@ main p{
     width: 100%;
     object-fit: cover;
     border-radius: 1.6rem;
+    transition: all 200ms;
 }
 
+.cards img:hover{
+    transform: scale(1.1);
+}
 
 .bigger{
     height: 450px;
 }
 .short{
     height: 250px;
-}
-
-.cards img:hover{
-    transform: scale(1.1);
 }
 
 .cards h2{
