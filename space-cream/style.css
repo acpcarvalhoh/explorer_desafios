@@ -30,19 +30,19 @@ body{
 header{
     text-align: center;
     background: var(--bgHeader);
-
 }
 
 header img{
     display: block;
     margin: auto;
     padding: 3.2rem 0;
+    transform: rotate(360deg);
+    animation: spin 2s linear infinite;
 }
 
 header .bg-title{
     padding-bottom: 2.9rem;
 }
-
 
 header h1{
     font-size: 4rem;
@@ -56,7 +56,8 @@ header h1{
 main{
     padding: 1.4rem 3.2rem 6rem 3.2rem;
     background: var(--bgMain);
-    display: grid;
+    display: flex;
+    flex-direction: column;
     gap: 3.2rem;
 }
 
@@ -70,13 +71,25 @@ main p{
 
 .cards{
     position: relative;
+    animation: downtop 500ms reverse backwards;
 }
 
 .cards img{
     width: 100%;
     object-fit: cover;
-    height: 250px;
     border-radius: 1.6rem;
+}
+
+
+.bigger{
+    height: 450px;
+}
+.short{
+    height: 250px;
+}
+
+.cards img:hover{
+    transform: scale(1.1);
 }
 
 .cards h2{
@@ -95,5 +108,35 @@ main p{
     position: absolute;
     right: 1.6rem;
     top: 1.6rem;
-    
+    animation: topdown 700ms;
+    transition-delay: 900ms;
+}
+
+/* Animações */
+
+/* Animação do logo */
+@keyframes spin{
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+/* Animação dos tipos de sorvete */
+@keyframes topdown{
+    0%{
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Animação dos cards com imagens */
+@keyframes downtop{
+    100%{
+        opacity: 0;
+        transform: translateY(15px);
+    }
 }
