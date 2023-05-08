@@ -183,6 +183,7 @@ footer{
         font-size: 4.4rem;
         line-height: 3.4rem;
         height: 7rem;
+        
     }
     
     header p{
@@ -259,42 +260,21 @@ footer{
     }
 
     /* Animações */
-    .an-left{
-        animation: left-center 700ms;
-        transition-delay: 900ms;
-    }
 
-    .an-right{
-        animation: right-center 700ms;
-        transition-delay: 900ms;
-    }
-    
     .an-top{
         animation: topcenter 900ms;
         transition-delay: 900ms;
     }
 
     .an-bottom{
-        animation: bottom-center 700ms;
+        animation: bottom-center 900ms;
         transition-delay: 900ms;
-    }
-
-    @keyframes left-center {
-        0%{
-            opacity: 0;
-            transform: translateX(-40px);
-        }
-    
-        100%{
-            opacity: 1;
-            transform: translateX(0);
-        }
     }
 
     @keyframes topcenter{
         0%{
             opacity: 0;
-            transform: translateY(-40px);
+            transform: translateY(-60px);
         }
     
         100%{
@@ -303,22 +283,10 @@ footer{
         }
     }
 
-    @keyframes right-center{
-        0%{
-            opacity: 0;
-            transform: translateX(40px);
-        }
-    
-        100%{
-            opacity: 1;
-            transform: translateX(0);
-        }
-    }
-
     @keyframes bottom-center{
         0%{
             opacity: 0;
-            transform: translateY(40px);
+            transform: translateY(60px);
         }
     
         100%{
