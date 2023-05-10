@@ -1,0 +1,79 @@
+*{
+    padding: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    font-size: 62.5%;
+    font-size: 1.6rem;
+}
+
+body{
+    background: #000;
+}
+
+main{
+   background: url(assets/fundo.svg);
+   background-size: cover;
+   margin: 1rem;
+   height: 90vh;
+   width: 95vw;
+   border: 2px solid #000;
+}
+
+aside{
+    display: flex;
+    flex-direction: column;
+    margin: 160px 176px;
+
+}
+
+main img{
+    width: 5rem;
+    height: 5rem;
+    position: relative;
+    
+}
+.holes{
+    position: relative;
+}
+
+.d-top{
+ position: absolute;
+ left: 0;
+ opacity: 0;
+ animation: downtop 2s ease-out infinite backwards;
+ }
+
+ @keyframes downtop{
+    0%{
+        opacity: 0;
+        transform: translateY(2px);
+    }
+  
+    25%{
+        opacity: 0;
+        transform: translateY(2px);
+    }
+  
+    50%{
+        opacity: 0;
+        transform: translateY(2px);
+    }
+  
+    50%{
+        opacity: 0;
+        transform: translateY(2px);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+ }
+
+.line-holes{
+    display: flex;
+    gap: 5.4rem;
+}
